@@ -63,7 +63,7 @@ bookShelf.addEventListener('submit', (e) => {
     const author = document.getElementById('author').value;
     const pages = document.getElementById('page').value;
     const year = document.getElementById('Year').value;
-    const isRead = document.getElementById('isRead').value;
+    const isRead = document.getElementById('isRead').checked;
 
     const newBook = createBook(title, author, pages, isRead, year);
     addBookToLibrary(newBook);
