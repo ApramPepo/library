@@ -24,6 +24,11 @@ function addBookToLibrary(book) {
     displayBooks();
 }
 
+function toggleRead(index) {
+    myLibrary[index].isRead = !myLibrary[index].isRead;
+    displayBooks();
+}
+
 function displayBooks() {
     const libraryDiv = document.getElementById('library');
     libraryDiv.innerHTML = '';
